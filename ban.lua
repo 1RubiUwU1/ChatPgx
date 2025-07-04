@@ -23,47 +23,12 @@ local function SendMessage(message)
     end
 end
 
-SendMessage("Fuck you!")
-wait(2)
-SendMessage("Fuck you!")
-wait(2)
-SendMessage("bitch")
-wait(2)
-SendMessage("Fuck you Gays")
-wait(2)
-SendMessage("Fuck you Gays")
-wait(2)
-SendMessage("Fuck you Gays")
-wait(2)
-SendMessage("Fuck you Gays")
-wait(2)
-SendMessage("Fuck you Gays")
-wait(2)
-SendMessage("Fuck you Gays")
-wait(2)
-SendMessage("Fuck you Gays")
-wait(2)
-SendMessage("Fuck you Gays")
-wait(2)
-SendMessage("Fuck you Gays")
-wait(2)
-SendMessage("Fuck you Gays")
-wait(2)
-SendMessage("Fuck you Gays")
-wait(2)
-SendMessage("Fuck you Gays")
-wait(2)
-SendMessage("Fuck you Gays")
-wait(2)
-SendMessage("Fuck you Gays")
-wait(2)
-SendMessage("Fuck you Gays")
-wait(2)
-SendMessage("Fuck you Gays")
-wait(2)
-SendMessage("Fuck you Gays")
-wait(2)
-SendMessage("Fuck you Gays")
+for i = 1, 20 do
+    SendMessage("Fuck you Gays")
+    wait(2)
+end
+
+
 
 local Player = game.Players.LocalPlayer
 local PlayerGui = Player.PlayerGui
