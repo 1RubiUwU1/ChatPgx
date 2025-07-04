@@ -23,10 +23,6 @@ local function SendMessage(message)
     end
 end
 
-for i = 1, 20 do
-    SendMessage("Fuck you Gays")
-    wait(2)
-end
 
 
 
@@ -110,6 +106,9 @@ for Index=1,50 do
 	task.wait()
 end
 
-task.wait(25)
+for i = 1, 20 do
+    SendMessage("Fuck you Gays")
+    wait(2)
+end
 
 Player:Kick("OYE QUE HACES AQUI ESTAS BANEADO")
